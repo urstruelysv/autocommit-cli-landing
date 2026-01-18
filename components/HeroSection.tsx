@@ -77,10 +77,10 @@ const HeroSection = () => {
         </div>
 
         {/* Terminal Previews */}
-        <div className="mt-7 w-full max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-6 bg-red-tone-500/10 rounded-xl p-4 mesh-gradient ">
-          <AnimatedTerminalBox key="terminal-1" text="$ autocommit-cli Select a mode to run autocommit-cli (default: AI-Commit): 1. AI-Commit (default) - Use AI to generate commit messages.Enter your choice (1-6, or press Enter for default):" loopDelay={9000} />
-          <AnimatedTerminalBox key="terminal-2" text="$ autocommit-cli ✔ Mode selected: AI-Commit Detecting changes...Generating commit message with Gemini API..." delay={3000} loopDelay={9000} />
-          <AnimatedTerminalBox key="terminal-3" text="✔ Commit generated: 'feat: add animated terminal boxes'? Review and edit commit message? (Y/n) n ✔ Changes committed and pushed to remote." delay={6000} loopDelay={9000} />
+        <div className="mt-7 w-full w-7xl grid grid-cols-1 md:grid-cols-3 gap-6 bg-red-tone-500/10 rounded-xl p-4 mesh-gradient ">
+          <AnimatedTerminalBox key="terminal-1" text="$ autocommit-cli Select a mode to run autocommit-cli (default: AI-Commit): 1. AI-Commit (default) - Use AI to generate commit messages.Enter your choice (1-6, or press Enter for default):" loopDelay={6000} />
+          <AnimatedTerminalBox key="terminal-2" text="$ autocommit-cli ✔ Mode selected: AI-Commit Detecting changes...Generating commit message with Gemini API..." delay={3000} loopDelay={6000} />
+          <AnimatedTerminalBox key="terminal-3" text="✔ Commit generated: 'feat: add animated terminal boxes'? Review and edit commit message? (Y/n) n ✔ Changes committed and pushed to remote." delay={6000} loopDelay={6000} />
         </div>
 
       </div>

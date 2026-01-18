@@ -2,6 +2,8 @@
 
 import React from 'react';
 
+import AnimatedFeatureCard from './AnimatedFeatureCard';
+
 const FutureUpdatesSection = () => {
   return (
     <section id="future-updates" className="max-w-6xl w-full py-16 text-center px-4 md:py-20 lg:py-24">
@@ -13,40 +15,40 @@ const FutureUpdatesSection = () => {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 max-w-5xl mx-auto">
         {/* Planned Feature 1: Easy Installation */}
-        <div className="bg-gray-900 p-6 rounded-lg text-left border border-gray-700 font-vt323 text-base feature-card">
-          <h3 className="text-xl font-semibold mb-2 text-white font-press-start-2p">Easy Installation</h3>
-          <p className="text-gray-400">Homebrew, PowerShell/Scoop/Winget, single binary, npm/pip (via wrapper), VS Code Extension.</p>
-        </div>
+        <AnimatedFeatureCard
+          title="Easy Installation"
+          description="Homebrew, PowerShell/Scoop/Winget, single binary, npm/pip (via wrapper), VS Code Extension."
+        />
 
         {/* Planned Feature 2: Intelligent Change Classification */}
-        <div className="bg-gray-900 p-6 rounded-lg text-left border border-gray-700 font-vt323 text-base feature-card">
-          <h3 className="text-xl font-semibold mb-2 text-white font-press-start-2p">Intelligent Classification</h3>
-          <p className="text-gray-400">Advanced language-aware heuristics and learned patterns for change classification.</p>
-        </div>
+        <AnimatedFeatureCard
+          title="Intelligent Classification"
+          description="Advanced language-aware heuristics and learned patterns for change classification."
+        />
 
         {/* Planned Feature 3: Learning From History */}
-        <div className="bg-gray-900 p-6 rounded-lg text-left border border-gray-700 font-vt323 text-base feature-card">
-          <h3 className="text-xl font-semibold mb-2 text-white font-press-start-2p">Continuous Learning</h3>
-          <p className="text-gray-400">Continuously improves commit quality based on past commits and project guidelines.</p>
-        </div>
+        <AnimatedFeatureCard
+          title="Continuous Learning"
+          description="Continuously improves commit quality based on past commits and project guidelines."
+        />
 
         {/* Planned Feature 4: Commit Guide Awareness */}
-        <div className="bg-gray-900 p-6 rounded-lg text-left border border-gray-700 font-vt323 text-base feature-card">
-          <h3 className="text-xl font-semibold mb-2 text-white font-press-start-2p">Commit Guide Awareness</h3>
-          <p className="text-gray-400">Automatically detects and adheres to project-specific commit guidelines.</p>
-        </div>
+        <AnimatedFeatureCard
+          title="Commit Guide Awareness"
+          description="Automatically detects and adheres to project-specific commit guidelines."
+        />
 
         {/* Planned Feature 5: PR Creation */}
-        <div className="bg-gray-900 p-6 rounded-lg text-left border border-gray-700 font-vt323 text-base feature-card">
-          <h3 className="text-xl font-semibold mb-2 text-white font-press-start-2p">PR Creation</h3>
-          <p className="text-gray-400">Future integration for automated Pull Request creation.</p>
-        </div>
+        <AnimatedFeatureCard
+          title="PR Creation"
+          description="Future integration for automated Pull Request creation."
+        />
 
         {/* Planned Feature 6: IDE-native integrations */}
-        <div className="bg-gray-900 p-6 rounded-lg text-left border border-gray-700 font-vt323 text-base feature-card">
-          <h3 className="text-xl font-semibold mb-2 text-white font-press-start-2p">IDE Integrations</h3>
-          <p className="text-gray-400">Native integrations with popular IDEs like VS Code and IntelliJ.</p>
-        </div>
+        <AnimatedFeatureCard
+          title="IDE Integrations"
+          description="Native integrations with popular IDEs like VS Code and IntelliJ."
+        />
       </div>
     </section>
   );

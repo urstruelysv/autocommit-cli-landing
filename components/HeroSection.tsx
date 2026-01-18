@@ -14,7 +14,7 @@ const HeroSection = () => {
         {/* Badges */}
         <div className="mb-6 flex flex-wrap items-center justify-center gap-3">
           <span
-            className="inline-flex items-center gap-2 rounded-full
+            className="inline-flex items-center gap-2 rounded-sm
                        border border-red-tone-500/30 bg-red-tone-500/10
                        px-4 py-1.5
                        text-xs md:text-sm
@@ -25,11 +25,11 @@ const HeroSection = () => {
           </span>
 
           <span
-            className="inline-flex items-center gap-2 rounded-full
+            className="inline-flex items-center gap-2 rounded
                        border border-white/10 bg-white/5
                        px-4 py-1.5
                        text-xs md:text-sm
-                       text-gray-300 font-vt323"
+                       text-gray-300 font-vt323 "
           >
             Built by AVL
           </span>
@@ -58,9 +58,11 @@ const HeroSection = () => {
         {/* CTA */}
         <div className="flex flex-col sm:flex-row items-center gap-4 mb-8">
           <a
-            href="https://github.com/urstruelysv/autocommit-cli"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#try-now"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('try-now')?.scrollIntoView({ behavior: 'smooth' });
+            }}
             className="px-8 py-3 rounded-lg font-bold text-white
                        text-sm md:text-base
                        bg-red-tone-500 border border-red-tone-500

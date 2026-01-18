@@ -5,22 +5,21 @@ import React from 'react';
 const AboutSection = () => {
   return (
     <section id="about" className="max-w-6xl w-full py-16 text-center px-4 md:py-20 lg:py-24">
-      <h2 className="text-4xl font-bold mb-8 font-press-start-2p bg-gradient-to-r from-red-tone-500 to-red-tone-600 bg-clip-text text-transparent md:text-5xl lg:text-6xl">About autocommit-cli</h2>
+      <h2 className="font-press-start-2p font-extrabold tracking-tight leading-[1.1] text-4xl sm:text-5xl md:text-6xl lg:text-[4.25rem] mb-12 bg-gradient-to-r from-red-tone-500 to-red-tone-600 bg-clip-text text-transparent">
+        About autocommit-cli
+      </h2>
       <div className="max-w-3xl mx-auto text-lg text-gray-300 leading-relaxed text-left font-vt323 md:text-xl">
-        <p className="mb-4">
-          In the fast-paced world of software development, maintaining a clean and informative Git history is crucial.
-          However, crafting meaningful commit messages can often be a tedious and time-consuming task,
-          distracting developers from their core work. This is where <strong className="text-white">autocommit-cli</strong> steps in.
+        <p className="mb-6">
+          <strong className="text-white">autocommit-cli</strong> is an AI-powered Git automation tool designed to eliminate the friction of Git workflows. It intelligently detects code changes, groups them into logical commits, and generates high-quality commit messages automatically.
         </p>
-        <p className="mb-4">
-          <strong className="text-white">autocommit-cli</strong> is an innovative command-line interface tool designed to revolutionize
-          your Git workflow. By leveraging the power of artificial intelligence, it automatically generates
-          descriptive and accurate commit messages based on your staged code changes.
+        <p className="mb-6">
+          <strong className="text-white">Problem:</strong> Deciding what belongs in a commit, writing accurate messages, and maintaining consistency are tedious. Existing tools fall short, offering only partial solutions or requiring too much interaction.
+        </p>
+        <p className="mb-6">
+          <strong className="text-white">Our Goal:</strong> To fully automate Git commits smartly and safely, learn from past commits and guidelines, provide optional human review, and be trivial to install on any platform, working reliably in local dev and CI/CD.
         </p>
         <p>
-          Our goal is to enhance developer productivity, ensure consistency across projects, and make version control
-          a seamless and enjoyable experience. Spend less time thinking about commit messages and more time
-          building amazing software.
+          <strong className="text-white">Key Differentiators:</strong> Unlike other tools, autocommit-cli offers logical commit grouping, learns from your commit history and guidelines, provides fully automated pushes, and allows instant review/accept.
         </p>
       </div>
     </section>

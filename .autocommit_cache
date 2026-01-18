@@ -1,0 +1,8 @@
+{
+  "Scopes": {},
+  "Types": {
+    "chore": 1,
+    "feat": 1,
+    "fix": 1
+  }
+}

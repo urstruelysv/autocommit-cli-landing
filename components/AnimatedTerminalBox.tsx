@@ -10,7 +10,7 @@ interface AnimatedTerminalBoxProps {
   className?: string;
 }
 
-const AnimatedTerminalBox: React.FC<AnimatedTerminalBoxProps> = ({ text, delay = 0, speed = 70, loopDelay = 3000, className }) => {
+const AnimatedTerminalBox: React.FC<AnimatedTerminalBoxProps> = ({ text, delay = 0, speed = 70, loopDelay = 4000, className }) => {
   const [displayedText, setDisplayedText] = useState('');
   const [showCursor, setShowCursor] = useState(true);
   const [animationKey, setAnimationKey] = useState(0); // Key to force re-render and restart animation

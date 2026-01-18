@@ -1,26 +1,115 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-vt323: 'VT323', monospace;
+  --font-press-start-2p: 'Press Start 2P', cursive;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000;
+  color: #fff;
+  font-family: var(--font-vt323);
+  overflow-x: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-press-start-2p);
+  line-height: 1.2;
+}
+
+/* Custom animations for background gradients */
+@keyframes move-before {
+  from { transform: translate(0, 0); }
+  to { transform: translate(100px, 100px); }
+}
+@keyframes move-after {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-100px, -100px); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* Utility classes for responsive adjustments - these will be replaced by Tailwind's responsive utilities */
+/* Keeping them for now as a reference during refactoring */
+.text-center-mobile {
+  text-align: center;
+}
+
+.hidden-mobile {
+  display: none;
+}
+
+.block-mobile {
+  display: block;
+}
+
+/* Specific styles for mobile navigation - these will be integrated into Tailwind classes */
+.mobile-nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(5px);
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.mobile-nav-overlay a {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--font-press-start-2p);
+}
+
+/* Responsive adjustments - these will be replaced by Tailwind's responsive utilities */
+/* Keeping them for now as a reference during refactoring */
+@media (max-width: 1024px) {
+  html { font-size: 90%; }
+  h1 { font-size: 3.5rem !important; }
+  h2 { font-size: 2rem !important; }
+  .section-padding { padding: 3rem 1.5rem !important; }
+  .header-padding { padding: 0.5rem 1.5rem !important; }
+  .nav-link-margin { margin: 0 0.5rem !important; }
+  .hero-margin-top { margin-top: 4rem !important; }
+  .hero-margin-bottom { margin-bottom: 1.5rem !important; }
+  .feature-card-padding { padding: 1.2rem !important; }
+  .code-block-padding { padding: 1rem !important; }
+  .footer-padding { padding: 1.5rem 1.5rem !important; }
+}
+
+@media (max-width: 768px) {
+  html { font-size: 85%; }
+  h1 { font-size: 2.5rem !important; }
+  h2 { font-size: 1.8rem !important; }
+  .header-padding { padding: 0.5rem 1rem !important; }
+  .nav-links-container { display: none; }
+  .mobile-menu-button { display: block !important; }
+  .hero-margin-top { margin-top: 3rem !important; }
+  .hero-margin-bottom { margin-bottom: 1rem !important; }
+  .features-grid { grid-template-columns: 1fr !important; }
+  .how-it-works-step { flex-direction: column; text-align: center; }
+  .step-number { margin-bottom: 0.5rem; }
+  .code-block-width { max-width: 100% !important; }
+  .footer-content { flex-direction: column; gap: 1rem; }
+  .footer-links { flex-direction: column; gap: 0.5rem; }
 }

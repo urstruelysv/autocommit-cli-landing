@@ -44,6 +44,12 @@ const FeaturesSection = () => {
           title="CI/CD Ready"
           description="Easy installation across platforms and reliable, non-interactive execution in CI/CD pipelines."
         />
+
+        {/* Feature 7: Easy Installation */}
+        <AnimatedFeatureCard
+          title="Easy Installation"
+          description="Install with a single command via Homebrew on macOS & Linux, or use the npm wrapper for cross-platform compatibility."
+        />
       </div>
     </section>
   );

@@ -7,7 +7,6 @@ import FeaturesSection from '@/components/FeaturesSection';
 import AboutSection from '@/components/AboutSection';
 import FutureUpdatesSection from '@/components/FutureUpdatesSection';
 import TryNowSection from '@/components/TryNowSection';
-import DocumentationSection from '@/components/DocumentationSection';
 import Footer from '@/components/Footer';
 import GradientBackground from '@/components/GradientBackground';
 
@@ -21,7 +20,6 @@ const Page = () => {
       <AboutSection />
       <FutureUpdatesSection />
       <TryNowSection />
-      <DocumentationSection />
       <Footer />
     </main>
   );

@@ -14,12 +14,6 @@ const FutureUpdatesSection = () => {
         We are continuously working to improve autocommit-cli. Here's a sneak peek at what's coming next:
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 max-w-5xl mx-auto">
-        {/* Planned Feature 1: Easy Installation */}
-        <AnimatedFeatureCard
-          title="Easy Installation"
-          description="Homebrew, PowerShell/Scoop/Winget, single binary, npm/pip (via wrapper), VS Code Extension."
-        />
-
         {/* Planned Feature 2: Intelligent Change Classification */}
         <AnimatedFeatureCard
           title="Intelligent Classification"

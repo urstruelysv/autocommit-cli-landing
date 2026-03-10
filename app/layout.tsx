@@ -17,6 +17,20 @@ const pressStart2P = Press_Start_2P({
 export const metadata: Metadata = {
   title: "autocommit-cli",
   description: "AI-powered git commit message generator",
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-64.png", sizes: "64x64", type: "image/png" },
+      { url: "/favicon-128.png", sizes: "128x128", type: "image/png" },
+      { url: "/favicon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/favicon-256.png", sizes: "256x256", type: "image/png" },
+      { url: "/favicon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/favicon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/favicon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+  },
 };
 
 export default function RootLayout({

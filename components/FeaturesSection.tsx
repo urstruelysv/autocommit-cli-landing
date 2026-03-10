@@ -18,7 +18,7 @@ const FeaturesSection = () => {
         {/* Feature 2: AI-Powered Message Generation */}
         <AnimatedFeatureCard
           title="AI-Powered Messages"
-          description="Generates high-quality, context-aware commit messages using advanced AI (Gemini API)."
+          description="Generates high-quality, context-aware commit messages using advanced AI (Groq API)."
         />
 
         {/* Feature 3: History Learning & Guidelines */}

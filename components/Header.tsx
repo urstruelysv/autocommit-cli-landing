@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { Github } from "lucide-react";
 
 const NAV_HEIGHT = 72;
@@ -35,13 +36,23 @@ const Header = () => {
     >
       <div className="max-w-6xl mx-auto h-full px-6 flex items-center justify-between">
         {/* Logo */}
-        <div
-          className="font-press-start-2p text-base tracking-tight
-                     bg-gradient-to-r from-red-tone-500 to-red-tone-600
-                     bg-clip-text text-transparent select-none"
+        <a
+          href="#hero"
+          className="flex items-center gap-3 select-none"
+          onClick={(e) => handleScroll(e, "hero")}
+          aria-label="autocommit-cli home"
         >
-          autocommit-cli
-        </div>
+          <div className="relative h-10 w-48 sm:h-12 sm:w-64">
+            <Image
+              src="/autocommit.png"
+              alt="autocommit-cli"
+              fill
+              priority
+              sizes="(max-width: 640px) 192px, 256px"
+              className="object-cover object-center drop-shadow-[0_0_18px_rgba(239,68,68,0.55)]"
+            />
+          </div>
+        </a>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8 font-vt323 text-base">

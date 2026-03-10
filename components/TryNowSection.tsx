@@ -46,7 +46,7 @@ const TryNowSection = () => {
         <ul className="list-disc list-inside text-gray-400 font-vt323 text-base leading-relaxed">
           <li>Go (version 1.18 or higher recommended)</li>
           <li>Git (installed and configured)</li>
-          <li>Gemini API Key: Obtain a free API key from Google AI Studio. Set it as an environment variable `GEMINI_API_KEY` or in a `.env` file.</li>
+          <li>Groq API Key: Obtain a free API key from GroqCloud. Set it as an environment variable `GROQ_API_KEY` or in a `.env` file.</li>
         </ul>
       </div>
 
@@ -60,10 +60,10 @@ const TryNowSection = () => {
             $ cd autocommit-cli<br />
             <br />
             # Set up API Key (Option 1: Export as environment variable)<br />
-            $ export GEMINI_API_KEY="YOUR_GEMINI_API_KEY"<br />
+            $ export GROQ_API_KEY="YOUR_GROQ_API_KEY"<br />
             <br />
             # OR (Option 2: Create a .env file)<br />
-            $ echo 'GEMINI_API_KEY="YOUR_GEMINI_API_KEY"' &gt; .env<br />
+            $ echo 'GROQ_API_KEY="YOUR_GROQ_API_KEY"' &gt; .env<br />
             # Then load it (e.g., using a tool like `direnv` or manually `source .env`)<br />
             <br />
             # Run the application<br />
